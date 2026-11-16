@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V3D Creacions · Objetos personalizados en 3D</title>
+  <meta name="description" content="V3D Creacions: letras 3D, trofeos, escudos y objetos personalizados impresos en 3D. Pide el tuyo por WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== CABECERA ===== -->
+  <header class="nav">
+    <a href="#inicio" class="nav__logo">V3D<span>Creacions</span></a>
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav__menu">
+      <a href="#letras">Letras 3D</a>
+      <a href="#trofeos">Trofeos</a>
+      <a href="#escudos">Escudos</a>
+      <a href="#custom">Custom</a>
+      <a href="#otros">Otros</a>
+      <a href="#contacto" class="nav__cta">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- ===== BANNER ===== -->
+  <section class="hero" id="inicio">
+    <!-- Cambia la foto: pon tu imagen en img/hero.jpg -->
+    <div class="hero__bg"></div>
+    <div class="shape shape--1"></div>
+    <div class="shape shape--2"></div>
+    <div class="shape shape--3"></div>
+    <div class="shape shape--4"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Impresión 3D personalizada</p>
+      <h1 class="hero__title">V3D <span>Creacions</span></h1>
+      <p class="hero__text">Damos forma a tus ideas, capa a capa.</p>
+      <a href="#letras" class="btn btn--ghost">Ver creaciones ↓</a>
+    </div>
+  </section>
+
+  <!-- Cinta que se mueve -->
+  <div class="cinta" aria-hidden="true">
+    <div class="cinta__track">
+      <span>Letras 3D ★ Trofeos ★ Escudos ★ Custom ★ Hecho a mano en Castellón ★ </span>
+      <span>Letras 3D ★ Trofeos ★ Escudos ★ Custom ★ Hecho a mano en Castellón ★ </span>
+    </div>
+  </div>
+
+  <!-- ===== CATEGORÍAS ===== -->
+  <main class="categorias">
+
+    <section class="cat reveal" id="letras" style="--c:#ff5c8a">
+      <div class="cat__img" style="--ph:'Letras 3D'">
+        <!-- <img src="img/letras.jpg" alt="Letras 3D personalizadas"> -->
+      </div>
+      <div class="cat__info">
+        <span class="cat__num">01</span>
+        <h2>Letras 3D</h2>
+        <p>Nombres, logotipos y rótulos con volumen para tu negocio, tu habitación o tu evento. Elige tamaño, color y tipografía.</p>
+        <a href="letras.html" class="btn">Ver más</a>
+      </div>
+    </section>
+
+    <section class="cat cat--reverse reveal" id="trofeos" style="--c:#ffc233">
+      <div class="cat__img" style="--ph:'Trofeos'"></div>
+      <div class="cat__info">
+        <span class="cat__num">02</span>
+        <h2>Trofeos</h2>
+        <p>Trofeos únicos para torneos, campeonatos y premios de empresa. Diseñados a medida, con el nombre y el logo que quieras.</p>
+        <a href="trofeos.html" class="btn">Ver más</a>
+      </div>
+    </section>
+
+    <section class="cat reveal" id="escudos" style="--c:#3d8bff">
+      <div class="cat__img" style="--ph:'Escudos'"></div>
+      <div class="cat__info">
+        <span class="cat__num">03</span>
+        <h2>Escudos</h2>
+        <p>El escudo de tu club, peña o equipo en 3D, con todo el detalle. Ideal para regalar o decorar.</p>
+        <a href="escudos.html" class="btn">Ver más</a>
+      </div>
+    </section>
+
+    <section class="cat cat--reverse reveal" id="custom" style="--c:#8b5cf6">
+      <div class="cat__img" style="--ph:'Custom'"></div>
+      <div class="cat__info">
+        <span class="cat__num">04</span>
+        <h2>Custom</h2>
+        <p>¿Tienes una idea? Cuéntanosla y la hacemos realidad. Figuras, piezas, regalos… si se puede imaginar, se puede imprimir.</p>
+        <a href="custom.html" class="btn">Ver más</a>
+      </div>
+    </section>
+
+    <!-- PENDIENTE: 5º apartado, cambiar nombre y texto -->
+    <section class="cat reveal" id="otros" style="--c:#22c55e">
+      <div class="cat__img" style="--ph:'Próximamente'"></div>
+      <div class="cat__info">
+        <span class="cat__num">05</span>
+        <h2>Próximamente</h2>
+        <p>Texto del quinto apartado. Aquí irá una breve explicación de esta categoría.</p>
+        <a href="#" class="btn">Ver más</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="contacto reveal" id="contacto">
+    <h2>¿Hablamos?</h2>
+    <p>Cuéntanos qué necesitas y te enviamos presupuesto sin compromiso por WhatsApp.</p>
+    <a class="btn btn--wa js-wa" data-msg="Hola V3D Creacions, me gustaría pedir información sobre un pedido." href="#">
+      Escríbenos por WhatsApp
+    </a>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> V3D Creacions · Castellón</p>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="wa-float js-wa" data-msg="Hola V3D Creacions, tengo una consulta." href="#" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.5L3 29l6.7-1.7c1.9 1 4.1 1.6 6.3 1.6 7.2 0 13-5.8 13-13S23.2 3 16 3zm0 23.6c-2 0-4-.5-5.7-1.6l-.4-.2-4 1 1.1-3.9-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.8 5.1 2.9 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
